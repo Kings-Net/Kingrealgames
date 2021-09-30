@@ -324,6 +324,12 @@ nav ul li a:hover {
     color: #999;
 }
 /* end: game types styles */
+#ads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
 /* start: recent games styles */
 #recent-games {
@@ -698,7 +704,8 @@ footer ul li a {
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 35px;
     border-radius: 5px;
-    grid-template-areas: 
+    grid-template-areas:
+        "q q q q q q q q q q q" 
         "h h h h h h h h h h h"
         "m m m m m m m m m s s"
         "m m m m m m m m m t t"
@@ -708,6 +715,13 @@ footer ul li a {
 .containers a{
 text-decoration: none;
 
+}
+.Ads{
+grid-area: q;
+background-color: #40ABF5;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .header{
 background-color: rgb(255, 255, 255);
@@ -740,11 +754,13 @@ grid-gap: 10px;
 border-radius: 5px;
 }
 
-
 .sidebar{
     background-color: yellow;
     grid-area: s;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sidebar1{
     background-color: yellow;
@@ -755,12 +771,19 @@ border-radius: 5px;
     background-color: yellow;
     grid-area: a;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bottombar{
     grid-area: g;
     background-color: lawngreen;
+    display: flex;
     align-content: center;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 /*Holder 1*/
@@ -935,6 +958,7 @@ border-radius: 5px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "z f f f f";
     grid-gap:4px;
+    height: 53px;
 }
 .pic5{
     grid-area: z;
@@ -1415,6 +1439,7 @@ border-radius: 5px;
     grid-gap: 3px;
     border-radius: 5px;
     grid-template-areas: 
+        "q q"    
         "h h"
         "m m"
         "m m"
