@@ -718,7 +718,6 @@ text-decoration: none;
 }
 .Ads{
 grid-area: q;
-background-color: #40ABF5;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -755,7 +754,6 @@ border-radius: 5px;
 }
 
 .sidebar{
-    background-color: yellow;
     grid-area: s;
     border-radius: 5px;
     display: flex;
@@ -763,12 +761,11 @@ border-radius: 5px;
     justify-content: center;
 }
 .sidebar1{
-    background-color: yellow;
     grid-area: t;
     border-radius: 5px;
 }
 .sidebar2{
-    background-color: yellow;
+    
     grid-area: a;
     border-radius: 5px;
     display: flex;
@@ -777,7 +774,6 @@ border-radius: 5px;
 }
 .bottombar{
     grid-area: g;
-    background-color: lawngreen;
     display: flex;
     align-content: center;
     border-radius: 5px;
