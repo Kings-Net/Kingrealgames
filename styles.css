@@ -52,6 +52,23 @@ p, label, strong {
     justify-content: space-between;
 }
 
+#game-types-boxes a h4{
+color: white;
+}
+#game-types-boxes a h4:hover{
+    color: tomato;
+}
+#recent-games a h4{
+color:black ;
+}
+#recent-games a h4:hover{
+    color:tomato ;
+    }
+#recent-reviews a h4:hover{
+color:orangered;
+}
+
+
 .badge {
     padding: 9px 20px;
     color: #eee;
@@ -147,6 +164,15 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFB320;
 }
+.active{
+    color: #FF205F;
+    background-color: #FFB320;
+    border-radius: 10px;
+    padding: 8px;
+    }
+    .active:hover{
+        background-color:  #131313;
+    }
 
 #login-register-button {
     background-color: #FFB320;
@@ -298,7 +324,7 @@ nav ul li a:hover {
 }
 
 #game-types-boxes .box.racing {
-    background: url('img/Grand\ Theft\ Auto\ v\ -\ 2.jpg') top center no-repeat;
+    background: url('img/Grand\ Theft\ Auto\ v\ -\ 1.jpg') top center no-repeat;
     background-size: cover;
 }
 
@@ -461,7 +487,7 @@ nav ul li a:hover {
 
 /* start: recent reviews styles */
 #recent-reviews {
-    background-image: url(img/recent_reviews_bg.png) ;
+    background-image: url(img/recent_reviews_bg.png);
     background-position-x: right;
     background-position-y: top;
     background-attachment: initial;
@@ -480,7 +506,9 @@ nav ul li a:hover {
 #recent-reviews .box {
     flex-basis: 23%;
     position: relative;
+    background-color: rgba(128, 128, 128, 0.185);
     text-align: center;
+    border-radius: 20px;
 }
 
 #recent-reviews .box .rating-badge {
@@ -514,11 +542,12 @@ nav ul li a:hover {
 
 #recent-reviews .box .recent-reviews-image img {
     width: 100%;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 #recent-reviews .box p {
-    color: #999;
+    color: black;
 }
 /* end: recent reviews styles */
 
@@ -714,7 +743,11 @@ footer ul li a {
 }
 .containers a{
 text-decoration: none;
+color: black;
 
+}
+.containers a:hover{
+    color: blue;
 }
 .Ads{
 grid-area: q;
@@ -1109,6 +1142,9 @@ border-radius: 5px;
 } /* end 991px */
 
 @media (max-width: 767px) {
+    .body{
+     width: 100%;
+    }
     h4 {
         font-size: 1.2em;
     }
@@ -1120,7 +1156,7 @@ border-radius: 5px;
     nav ul {
         display: none;
         position: absolute;
-        top: 101%;
+        top: 100%;
         width: 100%;
         background-color: #131313;
         left: 0;
@@ -1214,31 +1250,23 @@ border-radius: 5px;
     /*End*/
     /*Games*/
     .containers {
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 80px auto auto auto auto auto;
-        grid-gap: 3px;
-        border-radius: 5px;
-        grid-template-areas: 
-            "h h"
-            "m m"
-            "m m"
-            "m m"
-            "a a"
-            "s s"
-            "g g"
-            "t t"
-            ;
+        max-width: 767px;
+        display: flex;
+        flex-direction: column;
     }
 
 .main{ 
-    background-color: rgb(250, 250, 250);
-    grid-area: m;
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
-    margin-top: 55px;
+    width: 100%;
+    
+}
+.sidebar{
+    display: none;
+
+}
+.sidebar2{
+    display: none;
 }
 .header{
     background-color: rgb(255, 255, 255);
@@ -1247,48 +1275,94 @@ border-radius: 5px;
 .holder1{
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
 }
-.Pic{
-    position: relative;
-    align-items: center;
-    padding-left: 25%;
+.Pic img{
+    width: 500px;
+    height: 200px;
+    
+}
+.name1{
+    width: 100%;
 }
 
 .holder2{
     display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
 }
-.pic2{
-    position: relative;
-    align-items: center;
-    padding-left: 25%;
+.pic2 img{
+    width: 500px;
+    height: 200px;
+}
+.name2{
+    width: 100%;
 }
 .holder3{
     display: flex;
-   flex-direction: column;
-}
-.pic3{
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     align-items: center;
-    padding-left: 25%;
+}
+.pic3 img{
+    width: 500px;
+    height: 200px;
+}
+.name3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .holder4{
     display: flex;
-   flex-direction: column;
-}
-.pic4{
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     align-items: center;
-    padding-left: 25%;
+    margin-bottom: 20px;
 }
+.pic4 img{
+    width: 500px;
+    height: 200px;
+}
+.name4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px;
+    }
+
 .holder5{
     display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+    margin-top: 50px;
 }
-.pic5{
-    position: relative;
+
+.pic5 img{
+    width: 500px;
+    height: 200px;
+    margin-top: 180px;
+}
+.name5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-left: 25%;
+    height: 200px;
+    margin-bottom: 85px;
+}    
+.bottombar{
+margin-top: 180px;
 }
     /*End of Games*/
 
@@ -1429,30 +1503,19 @@ border-radius: 5px;
  /*Games*/
  .containers {
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px auto auto auto auto auto;
-    grid-gap: 3px;
-    border-radius: 5px;
-    grid-template-areas: 
-        "q q"    
-        "h h"
-        "m m"
-        "m m"
-        "m m"
-        "a a"
-        "s s"
-        "g g"
-        "t t"
-        ;
+    display: flex;
 }
 
 .main{ 
 background-color: rgb(250, 250, 250);
-grid-area: m;
 display: flex;
 flex-direction: column;
+align-content: center;
+align-items: center;
 }
+
+
+
 .holder1{
 display: flex;
 flex-direction: column;
@@ -1460,8 +1523,37 @@ flex-direction: column;
 .Pic{
 position: relative;
 align-items: center;
-padding-left: 1px;
 }
+.Pic img{
+    width: 300px;
+    height: 198px;   
+}
+.name1{
+   width: 380px;
+   height: 100px;
+   align-items: flex-start;
+   
+}
+.name1 h2{
+color: rgb(0, 0, 0);
+font-weight: 700;
+font-size: 1.5rem;
+line-height: 2px;
+}
+.name1 a{
+    color: black;
+}
+.name1 a:hover{
+    color: blue;
+}
+.name1 p{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+
+
 
 .holder2{
 display: flex;
@@ -1470,8 +1562,36 @@ flex-direction: column;
 .pic2{
 position: relative;
 align-items: center;
-padding-left: 2%;
 }
+.pic2 img{
+    width: 300px;
+    height: 198px;  
+}
+.name2{
+    width: 380px;
+    height: 100px;
+    align-items: flex-start;
+ }
+ .name2 h2{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2px;
+ }
+ .name2 a{
+     color: black;
+ }
+ .name2 a:hover{
+     color: blue;
+ }
+ .name2 p{
+     color: rgb(0, 0, 0);
+     font-size: 1rem;
+     line-height: 20px;
+ }
+
+
+
 .holder3{
 display: flex;
 flex-direction: column;
@@ -1479,8 +1599,37 @@ flex-direction: column;
 .pic3{
 position: relative;
 align-items: center;
-padding-left: 2%;
 }
+.pic3 img{
+    width: 300px;
+    height: 198px; 
+}
+.name3{
+    width: 380px;
+    height: 100px;
+    align-items: flex-start;
+ }
+ .name3 h2{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1px;
+    line-height: 2px;
+ }
+ .name3 a{
+     color: black;
+ }
+ .name3 a:hover{
+     color: blue;
+ }
+ .name3 p{
+     color: rgb(0, 0, 0);
+     font-size: 1rem;
+     line-height: 20px;
+ }
+
+
+
 .holder4{
 display: flex;
 flex-direction: column;
@@ -1488,25 +1637,76 @@ flex-direction: column;
 .pic4{
 position: relative;
 align-items: center;
-padding-left: 2%;
 }
-.holder5{
+.pic4 img{
+    width: 300px;
+    height: 198px; 
+}
+.name4{
+    width: 380px;
+    height: 100px;
+    align-items: flex-start;
+ }
+ .name4 h2{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2px;
+ }
+ .name4 a{
+     color: black;
+ }
+ .name4 a:hover{
+     color: blue;
+ }
+ .name4 p{
+     color: rgb(0, 0, 0);
+     font-size: 1rem;
+     line-height: 20px;
+ }
+
+ .holder5{
 display: flex;
 flex-direction: column;
 }
 .pic5{
 position: relative;
 align-items: center;
-padding-left: 2%;
-} 
+}
+.name5{
+    width: 380px;
+    height: 100px;
+    align-items: flex-start;
+ }
+ .name5 h2{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2px;
+ }
+ .name5 a{
+     color: black;
+ }
+ .name5 a:hover{
+     color: blue;
+ }
+ .name5 p{
+     color: rgb(0, 0, 0);
+     font-size: 1rem;
+     line-height: 20px;
+ }
+.pic5 img{
+    width: 300px;
+    height: 198px; 
+}
 .sidebar2{
-    padding-bottom: 15px;
+   display: none;
 }
 .sidebar1{
-    padding-bottom: 15px;
+    display: none;
 }
 .sidebar{
-    padding-bottom: 15px;
+    display: none;
 }
 .bottombar{
     padding-bottom: 15px;
