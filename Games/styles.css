@@ -48,6 +48,7 @@ p, label, strong {
     line-height: 2;
     font-size: 0.85em;
     font-weight: 300;
+    color: black;
 }
 
 .flex {
@@ -123,6 +124,15 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFB320;
 }
+.active{
+    color: #FF205F;
+    background-color: #FFB320;
+    border-radius: 10px;
+    padding: 8px;
+    }
+    .active:hover{
+        background-color:  #131313;
+    }
 
 #login-register-button {
     background-color: #FFB320;
@@ -394,9 +404,37 @@ align-content: center;
 .download{
     margin: 15px;
     display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#dsec{
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    
+}
+.download-section{
+    background-color:rgba(128, 128, 128, 0.096);
+    border-radius: 5px;  
+    display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
+    padding: 5px;
+}
+.part{
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #007BDC;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.part:hover{
+    background-color: crimson;
 }
 
 .main h1{
@@ -632,7 +670,7 @@ color: black;
         margin-bottom: 0.2em;
     }
 }
-
+/*****************************************************/
 @media (max-width: 991px) {
     .flex {
         max-width: 720px;
@@ -642,39 +680,6 @@ color: black;
         margin: 0 12px;
         font-size: 0.85em;
     }
-
-    #latest-news .flex h5 {
-        width: 15%;
-    }
-
-    footer .flex {
-        flex-wrap: wrap-reverse;
-    }
-
-    footer small {
-        flex-basis: 100%;
-        font-size: 0.75em;
-        text-align: center;
-        margin-top: 20px;
-        line-height: 1.5;
-    }
-
-    footer ul {
-        flex-basis: 100%;
-        text-align: center;
-        padding: 0;
-    }
-} /* end 991px */
-
-@media (max-width: 767px) {
-    h4 {
-        font-size: 1.2em;
-    }
-
-    .flex {
-        max-width: 540px;
-    }
-
     nav ul {
         display: none;
         position: absolute;
@@ -703,17 +708,119 @@ color: black;
         margin-top: 2px;
     }
 
+    #latest-news .flex h5 {
+        width: 15%;
+    }
+
+    footer .flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    footer small {
+        flex-basis: 100%;
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    footer ul {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .containers {
+        padding: 15px;
+        height: 100%;
+        display: flex;
+    }
+    .main{
+        border: #FF205F solid 2px;
+    }
+
+    .ads1{
+        display: none;
+    }
+    .ads2{
+       display: none;
+    }
+    .ads3{
+        display: none;
+    }
+    .ads4{
+        display: none;
+    }
+    .ads5{
+        display: none;
+    }
+    .ads6{
+        display: none;
+    }
+    .ads7{
+        display: none;
+    }
+    .ads8{
+        display: none;
+    }
+    .text{
+        width: 100%;
+        background-color: lightyellow;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .text h2{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;}
+    .text p{
+        font-size: 0.5rem;
+    }
+} 
+/* end 991px */
+
+/********************************************************/
+
+
+@media (max-width: 767px) {
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .flex {
+        max-width: 540px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #131313;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid #FFB320;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-top: 2px;
+    }
+
     #hero-image {
-        height: 650px;
+        height: 150px;
         background-size: cover;
-    }
-
-    .hero-marketing-text {
-        margin-top: -85px;
-    }
-
-    .hero-marketing-text h1 {
-        font-size: 2.5em;
     }
 
     #latest-news .flex h5 {
@@ -723,8 +830,6 @@ color: black;
     #latest-news-container {
         flex-basis: 100%;
     }
-
-   
 
     footer ul li {
         margin: 0 10px;
@@ -737,18 +842,82 @@ color: black;
     /*End*/
     /*Games*/
     
+    .containers {
+        padding: 15px;
+        height: 100%;
+        width: 767px;
+        display: flex;
+    }
+    .main{
+        width: 100%;
+    }            
 
+    .ads1{
+        display: none;
+    }
+    .ads2{
+       display: none;
+    }
+    .ads3{
+        display: none;
+    }
+    .ads4{
+        display: none;
+    }
+    .ads5{
+        display: none;
+    }
+    .ads6{
+        display: none;
+    }
+    .ads7{
+        display: none;
+    }
+    .ads8{
+        display: none;
+    }
 
-
-
-
+    .game1 img{
+        width:100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .suggested{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .download-section{
+        background-color:rgba(128, 128, 128, 0.096);
+        border-radius: 5px;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 5px;
 
     /*End of Games*/
-
+}
 
  /* end 767px */
 
-@media (max-width: 400px) {
+}
+
+
+
+
+/**************************************************************/
+
+
+
+
+
+ @media (max-width: 400px) {
+    .body{
+        width: 100%;
+    }
     .logo img {
         width: 150px;
         margin-top: 2px;
@@ -767,109 +936,16 @@ color: black;
         margin-bottom: 20px;
         
 
-    }
-    /*Hero style*/
-    #hero-image {
-        background: url('img/Gamecover\ 1.jpg') top center no-repeat;
-        height: 340px;
-    }
+    } 
     
-    .hero-marketing-text {
-        max-width: 350px;
-        margin: -30px auto 0;
-        position: absolute;
-        top: 20%;
-        left: 10%;
-        right: 10%;
-        padding: 0 20px;
-        }
-    
-    .hero-marketing-text h1 {
-        color: rgb(243, 4, 243);
-        font-size: 1.5rem;
-        font-weight: 800;
-        margin: 0.5em 0;
-        padding-left: 20px;
-        background-color: rgba(255, 248, 220, 0.644)
-    }
-    
-    .hero-marketing-text span {
-        color: #ff5f20;
-    }
-    
-    .hero-marketing-text h5 {
-        color: rgb(0, 66, 247);
-        font-size: 1rem;
-        font-weight: 500;
-        max-width: 300px;
-        line-height: 2;
-        padding-left: 10px;
-        margin-bottom: 2.5em;
-        background-color:rgba(255, 248, 220, 0.644)
-    }
-    
-    .hero-marketing-text button {
-        background-color: #FFB320;
-        color: #131313;
-        border-radius: 25px;
-        padding: 15px 25px;
-        font-size: 0.85em;
-        font-weight: 600;
-        border: none;
-        cursor: pointer;
-    }
-
-    /*End of Hero style*/
     /*Hero style 2*/
 
     #hero-image-Games{
         background: url('img/Gamecover\ 1.jpg') top center no-repeat;
-        height: 310px;
+        height: 150px;
+        background-size: cover;
     }
-    
-    
-    .hero-marketing-texts {
-        max-width: 450px;
-        position: absolute;
-        bottom: 40%;
-        left: 10%;
-        padding: 0 10px;
-    }
-    
-    .hero-marketing-texts h1 {
-        color: crimson;
-        font-size: 2rem;
-        font-weight: 800;
-        margin: 0.5em 0;
-        background-color: rgba(45, 203, 243, 0.26);
-        
-    }
-    .hero-marketing-texts span {
-        color: rgb(255, 174, 0);
-    }
-    
-    .hero-marketing-texts h5 {
-        color: rgb(230, 8, 200);
-        padding-left: 10px;
-        font-size: 1.5rem;
-        font-weight: 700;
-        max-width: 500px;
-        line-height: 2;
-        margin-bottom: 2.5em;
-        background-color: rgba(45, 203, 243, 0.26);
-    }
-    .hero-marketing-texts button {
-        background-color: #FFB320;
-        color: #131313;
-        border-radius: 25px;
-        padding: 10px 15px;
-        margin-bottom: 10px;
-        font-size: 0.85em;
-        font-weight: 600;
-        border: none;
-        cursor: pointer;
-    }
-
+   
     /*End of Hero style 2*/
 
     .flex {
@@ -879,7 +955,275 @@ color: black;
     padding: 0 15px;
     justify-content: space-between;
     }
+
+    .containers {
+    max-width: 400px;
+    padding: 5px;
     
+    display: flex;
+    
+    }
+/*main Content*/
+    .main{     
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 1px;
+        border-radius: 2px;
+       border: #FF205F solid 2px;
+
+    }
+/*Ads content*/
+    .Ads{
+        display: none;
+    }
+    .ads1{
+        display: none;
+    }
+    .ads2{
+       display: none;
+    }
+    .ads3{
+        display: none;
+    }
+    .ads4{
+        display: none;
+    }
+    .ads5{
+        display: none;
+    }
+    .ads6{
+        display: none;
+    }
+    .ads7{
+        display: none;
+    }
+    .ads8{
+        display: none;
+    }
+
+
+    
+    /*Below content*/
+    .suggested{
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 15px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+
+    }
+
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        background-color: lightyellow;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .text h2{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;}
+    
+    
+    .youtube iframe{
+        height: 100%;
+        width: 240px;
+    }
+    .youtube{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 20px;
+        height: 150px;
+    }
+    .main img{
+        width: 100%;
+        border-radius: 20px;
+
+        }
+        .download-section{
+            background-color:rgba(128, 128, 128, 0.096);
+            border-radius: 5px;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            padding: 5px;}
     /* end: media queries */
 }
+
+@media (max-width: 360px){
+    .body{
+        width: 100%;
+    }
+    .logo img {
+        width: 150px;
+        margin-top: 2px;
+    }
+
+    #login-register-button {
+        padding: 10px;
+        font-size: 0.65em;
+    }
+
+    #Upcoming .box .Upcoming-image {
+        height: 220px;
+    }
+    /*nav bar*/
+    #sidebar{
+        margin-bottom: 20px;
+        
+
+    } 
+    
+    /*Hero style 2*/
+
+    #hero-image-Games{
+        background: url('img/Gamecover\ 1.jpg') top center no-repeat;
+        height: 150px;
+        background-size: cover;
+    }
+   
+    /*End of Hero style 2*/
+    .flex {
+    display: flex;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+    }
+
+    .containers {
+    max-width: 360px;;
+    padding: 5px;
+    
+    }
+/*main Content*/
+    .main{     
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 1px;
+        border-radius: 2px;
+       border: #FF205F solid 2px;
+
+    }
+/*Ads content*/
+    .Ads{
+        display: none;
+    }
+    .ads1{
+        display: none;
+    }
+    .ads2{
+       display: none;
+    }
+    .ads3{
+        display: none;
+    }
+    .ads4{
+        display: none;
+    }
+    .ads5{
+        display: none;
+    }
+    .ads6{
+        display: none;
+    }
+    .ads7{
+        display: none;
+    }
+    .ads8{
+        display: none;
+    }
+
+
+    
+    /*Below content*/
+    .suggested{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+
+    }
+
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        background-color: lightyellow;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .text h2{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;}
+    
+    
+    .youtube iframe{
+        height: 100%;
+        width: 240px;
+    }
+    .youtube{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 20px;
+        height: 150px;
+    }
+    .main img{
+        width: 100%;
+        border-radius: 20px;
+
+    }
+    .download-section{
+        background-color:rgba(128, 128, 128, 0.096);
+        border-radius: 5px;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 5px;
+    }
+                /* end: media queries */
+    /***************************************************/
 }
