@@ -124,13 +124,13 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFB320;
 }
-.active{
+.select{
     color: #FF205F;
     background-color: #FFB320;
     border-radius: 10px;
     padding: 8px;
     }
-    .active:hover{
+    .select:hover{
         background-color:  #131313;
     }
 
@@ -292,11 +292,12 @@ footer ul li a {
     font-size: 0.8em;
 }
 /* end: footer styles */
-
-
-
-
-
+#disqus_thread{
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    display: none;
+}
 
 /*Gaming Css Files*/
 .containers {
@@ -416,7 +417,7 @@ align-content: center;
     
 }
 .download-section{
-    background-color:rgba(128, 128, 128, 0.096);
+    /*background-color:rgba(128, 128, 128, 0.096);*/
     border-radius: 5px;  
     display: flex;
     align-items: center;
@@ -431,6 +432,7 @@ align-content: center;
     background-color: #007BDC;
     margin: 10px;
     border-radius: 10px;
+    color: white;
 
 }
 .part:hover{
@@ -705,7 +707,7 @@ color: black;
 
     .hamburger-menu {
         display: block;
-        margin-top: 2px;
+        margin-top: 15px;
     }
 
     #latest-news .flex h5 {
@@ -775,6 +777,12 @@ color: black;
     .text p{
         font-size: 0.5rem;
     }
+    .suggested{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 } 
 /* end 991px */
 
@@ -787,7 +795,7 @@ color: black;
     }
 
     .flex {
-        max-width: 540px;
+        max-width: 600px;
     }
 
     nav ul {
@@ -815,7 +823,7 @@ color: black;
 
     .hamburger-menu {
         display: block;
-        margin-top: 2px;
+        margin-top: 18px;
     }
 
     #hero-image {
@@ -845,11 +853,13 @@ color: black;
     .containers {
         padding: 15px;
         height: 100%;
-        width: 767px;
+        max-width: 767px;
         display: flex;
     }
     .main{
         width: 100%;
+        max-width: 767px;
+        padding: 15px;
     }            
 
     .ads1{
@@ -919,24 +929,27 @@ color: black;
         width: 100%;
     }
     .logo img {
-        width: 150px;
+        width: 180px;
         margin-top: 2px;
     }
-
-    #login-register-button {
-        padding: 10px;
-        font-size: 0.65em;
-    }
-
     #Upcoming .box .Upcoming-image {
         height: 220px;
     }
-    /*nav bar*/
-    #sidebar{
-        margin-bottom: 20px;
-        
+    nav ul li {
+        display: block;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid #FFB320;
+        margin: 0;
+    }
 
-    } 
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-top: 2px;
+    }
     
     /*Hero style 2*/
 
@@ -949,20 +962,21 @@ color: black;
     /*End of Hero style 2*/
 
     .flex {
-    display: flex;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 0 15px;
-    justify-content: space-between;
+        display: flex;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 0 15px;
+        justify-content: space-between;
     }
 
     .containers {
     max-width: 400px;
     padding: 5px;
-    
     display: flex;
-    
     }
+
+    
+
 /*main Content*/
     .main{     
         width: 100%;
@@ -1060,7 +1074,7 @@ color: black;
         border-radius: 20px;
 
         }
-        .download-section{
+    .download-section{
             background-color:rgba(128, 128, 128, 0.096);
             border-radius: 5px;  
             display: flex;
@@ -1070,7 +1084,7 @@ color: black;
             align-content: center;
             padding: 5px;}
     /* end: media queries */
-}
+    }
 
 @media (max-width: 360px){
     .body{
@@ -1107,7 +1121,7 @@ color: black;
     /*End of Hero style 2*/
     .flex {
     display: flex;
-    max-width: 360px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 0 15px;
     justify-content: space-between;
